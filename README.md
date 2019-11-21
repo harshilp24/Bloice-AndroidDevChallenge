@@ -17,25 +17,25 @@ I was working on this project and I saw #AndroidDevChallenge is live which gave 
 Google cloud’s vision API is very accurate to do such work.I have added a few code files which I have used till now. It is developed by using MLkit and Google translate. 
  
 How Google could help us achieve the goal :
-Provide a Mentor for the project
-By advising ways to optimise the ML model
-Help us get a BETA audience
-Free credits/trail for Google APIs until it's released 
-Data set for the project
+-Provide a Mentor for the project
+-By advising ways to optimise the ML model
+-Help us get a BETA audience
+-Free credits/trail for Google APIs until it's released 
+-Data set for the project
  
 Timeline:
-December 2019:
+-December 2019:
 Documenting and Training Models
 Finalising the best possible method for the application
 Prototyping 
-January 2020:
+-January 2020:
 Development and Google Vision integration
 Implementing  UI/UX for the App
-February 2020 :
+-February 2020 :
 Developing the Android application
-March 2020 :
+-March 2020 :
 Beta testing the Android application
-April 2020 :
+-April 2020 :
 Finalising the Android application
 Taking User Feedback and Making necessary changes
  
