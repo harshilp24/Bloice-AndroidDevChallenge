@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thetechroot.vision">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoam"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoam"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.BARCODE.DEPENDENCIES"
+            android:value="barcode" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.FACE.DEPENDENCIES"
+            android:value="face" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.LABEL.DEPENDENCIES"
+            android:value="label" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".TextActivity"
+            android:label="Text Recognition"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".QRActivity"
+            android:label="Barcode/Qr Scanner"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FAQActivity"
+            android:label="FAQs"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".AnalyzeActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PriceListActivity"
+            android:label="Plans" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="Help"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LabelActivity"
+            android:label="Image labeling"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Splashscreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserInfoSQL" />
+        <activity
+            android:name=".DemoActivity"
+            android:label="Notifications"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FaceActivity"
+            android:label="Face Detection"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".IntAds"
+            android:label="@string/title_activity_int_ads" /> <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".NotificationActivity"
+
+            android:label="Notifications"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WebTransActivity"
+            android:parentActivityName=".TextActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NewQRActivity"
+            android:label="QR/Barcode Scanner"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".QRUrlActivity"
+            android:label="QR CODE"
+            android:parentActivityName=".NewQRActivity" />
+        <activity android:name=".ReferEarnActivity">
+
+            <!-- Branch URI Scheme -->
+            <intent-filter>
+                <data android:scheme="androidexample" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+
+
+            <!-- Branch App Links (optional) -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.app.link"
+                    android:scheme="https" />
+                <data
+                    android:host="example-alternate.app.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChatSupportActivity"
+            android:label="Support"></activity>
+
+        <service android:name=".Notifications.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".Notifications.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

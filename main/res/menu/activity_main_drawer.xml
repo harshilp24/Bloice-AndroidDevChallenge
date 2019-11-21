@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_text"
+            android:icon="@drawable/iconshandwrit52"
+            android:title="Text Recognition" />
+
+        <item
+            android:id="@+id/nav_qr"
+            android:icon="@drawable/iconsqrcode52"
+            android:title="QR Recognition" />
+        <item
+            android:id="@+id/nav_image"
+            android:icon="@drawable/icons8purposefulman52"
+            android:title="Image Recognition" /><item
+        android:id="@+id/nav_face"
+        android:icon="@drawable/iconsface52"
+        android:title="Face Detection" />
+        <item
+            android:id="@+id/nav_label"
+            android:icon="@drawable/icons8imagefile52"
+            android:title="Image Label" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/icons8info2"
+            android:title="About App" />
+      <!--  <item
+            android:id="@+id/nav_pro"
+            android:icon="@drawable/icons8crownred"
+            android:title="Upgrade To Premium" />-->
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/icons8thumbs"
+            android:title="Rate Us" />
+    </group>
+
+    <item android:title="Pro Plan">
+        <menu>
+
+            <item
+                android:id="@+id/nav_pro"
+                android:icon="@drawable/icons8crownred"
+                android:title="Upgrade To Premium" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_refer"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Refer &amp; Earn" />
+
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/icons8faq52"
+                android:title="Faq" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/icons8newpost52"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/icons8help52"
+                android:title="Help" />
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thetechroot.vision.IntAds">
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share_w_24dp"
+        app:showAsAction="always"   android:title="Share Response"/>
+
+
+    <item
+        android:id="@+id/action_copy"
+        android:icon="@drawable/ic_content_copy_black_24dp"
+        app:showAsAction="always"   android:title="Copy Response"/>
+
+    <item
+        android:id="@+id/action_sug"
+        android:orderInCategory="100"
+        android:title="Send Suggestions"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebTransActivity">
+
+
+
+    <WebView
+        android:id="@+id/transweb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="InvalidId" />
+
+    <ProgressBar
+        android:id="@+id/progressBarweb"
+        android:layout_width="70dp"
+        android:layout_height="59dp"
+        android:layout_centerInParent="true" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardviewhide"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/txtcard"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Translation Service Is Not Fully Active"/>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

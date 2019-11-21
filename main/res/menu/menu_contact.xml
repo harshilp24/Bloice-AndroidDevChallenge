@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_help_outline_white24dp"
+        app:showAsAction="always"   android:title="Help"/>
+
+    <item
+        android:id="@+id/action_offers"
+        android:icon="@drawable/ic_local_offer"
+        app:showAsAction="always"   android:title="Offers"/>
+
+    <item
+        android:id="@+id/action_contact"
+        android:orderInCategory="100"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+
+
+  <!--  <item
+
+        android:orderInCategory="100"
+        android:visible="true"
+        android:title="Offers"
+        app:showAsAction="never" />-->
+
+
+</menu>
