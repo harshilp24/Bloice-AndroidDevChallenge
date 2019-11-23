@@ -7,7 +7,7 @@ Tell us what your idea is.
 
 
 
-Bloice -  A assistance for blind people. My Idea is to make an app for blind people, where app is called via speech from Google assistant like "OK Google, open bloice", when the app is opened, we can perform task with the help of users voice. User can hold camera against any book, newspaper, place, object or anything. We will then convert the image/text/object into speech and let the user know what was the text or object. User can also ask for color, like "what color the car is ?".
+Bloice -  A assistance for blind people. My Idea is to make an app for blind people, where app is called via speech from Google assistant like "OK Google, open bloice", when the app is opened, we can perform task with the help of users voice. User can hold camera against any book, newspaper, place, object or anything. We will then convert the image/text/object into speech and let the user know what was the text or object. User can also ask for color, like "what color the car is ?". They can even scan money and currency.
 
 
 Tell us how you plan on bringing it to life.
